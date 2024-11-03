@@ -1,0 +1,88 @@
+
+/* Main Dashboard Layout */
+.dashboard-content {
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  padding: 1.5rem 2rem;
+  gap: 1.5rem;
+}
+
+/* Welcome and Form Sections in Grid */
+.top-sections {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Quick Stats Section */
+.quick-stats {
+  background-color: white;
+  color: var(--text-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+}
+
+.stats-grid {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.stat-card {
+  background-color: var(--primary-blue);
+  color: white;
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Form Selection Section */
+.form-selection {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+
+
+
+/* Layout for Top Section (Welcome, Form Selection, and Tips) */
+.top-sections {
+  display: flex;
+  gap: 1.5rem;
+  align-items: stretch;; /* Aligns the tips with the welcome and form selection */
+}
+
+.quick-stats, .form-selection,
+.helpful-tips-container {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.quick-stats h2, .form-selection h2, .helpful-tips-container h2 {
+  font-size: 1.2rem;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .top-sections {
+    flex-direction: column; /* Stack top sections vertically on smaller screens */
+  }
+}

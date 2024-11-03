@@ -1,0 +1,42 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: #335a91; /* Lighter blue for logo visibility */
+    color: white;
+  }
+  
+  /* Logo and Application Name */
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo img {
+    width: 50px; /* Adjust logo size as needed */
+    height: 50px;
+    margin-right: 0.8rem;
+  }
+  
+  .navbar-logo h1 {
+    font-size: 1.3rem; /* Adjust font size for readability */
+    font-weight: bold;
+    color: var(--gold-accent); /* Use the gold accent for visibility */
+    white-space: nowrap; /* Prevents text from wrapping */
+  }
+  
+  /* Icons Section */
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-icons i {
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    color: var(--gold-accent);
+    cursor: pointer;
+  }
+  

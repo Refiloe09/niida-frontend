@@ -1,3 +1,83 @@
+:root {
+  --primary-blue: #003366;
+  --secondary-blue: #4a90e2;
+  --gold-accent: #dca030;
+  --light-background: #f4f6f8;
+  --text-color: #333333;
+
+  --font-family-primary: 'Roboto', sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: var(--font-family-primary);
+  background-color: var(--light-background);
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-blue);
+}
+
+button, .form-button {
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+button:hover, .form-button:hover {
+  background-color: var(--gold-accent);
+}
+
+footer, .navbar {
+  background-color: var(--primary-blue);
+  color: white;
+}
+
+a {
+  color: var(--secondary-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-blue);
+}
+
+/* Card Styles */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+/* Helpful Tips Card */
+.helpful-tips {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+/* Custom Styling for Links and Icons */
+.icon-button {
+  color: var(--gold-accent);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icon-button:hover {
+  color: var(--gold-accent);
+}
+
+
+
+
 .App {
   text-align: center;
 }

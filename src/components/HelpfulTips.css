@@ -1,0 +1,36 @@
+.helpful-tips-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tip-card {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+  .tip-controls {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .tip-controls button {
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .tip-controls button:hover {
+    background-color: var(--gold-accent);
+  }
+  

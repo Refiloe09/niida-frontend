@@ -1,0 +1,22 @@
+/* Container styling */
+/* Ensuring the DataGrid stays within bounds */
+.recent-submissions-container {
+    width: 50%;
+   
+    overflow: hidden;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    background-color: white;
+  }
+  
+  
+  /* Title styling */
+  .recent-submissions-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #003366; /* Dark blue to match theme */
+    margin-bottom: 1rem;
+  }
+  
